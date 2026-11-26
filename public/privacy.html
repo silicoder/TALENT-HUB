@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Privacy Notice | Talent Hub</title>
+  <link rel="stylesheet" href="/styles.css">
+
+</head>
+<body>
+  <main class="privacy-page">
+    <a href="/" class="brand-lockup"><span class="brand-mark">T</span><span>Talent<span class="brand-light">Hub</span></span></a>
+    <p class="eyebrow">DATA USE AND PRIVACY</p>
+    <h1>Talent Hub privacy notice</h1>
+    <p><strong>Scope:</strong> This notice describes the data handling in the Talent Hub coursework demonstration. It is not a legal compliance certification or a substitute for an institution-approved privacy notice.</p>
+
+    <h2>1. Information collected</h2>
+    <p>When a student registers, the application stores a name, email address, student ID, academic branch, CGPA, graduation year and optional skills text. Authentication records contain a one-way password hash, not the original password. The application also records account and placement actions in an audit log.</p>
+
+    <h2>2. Why the information is used</h2>
+    <p>The information is used only to create and secure an account, display a student profile to signed-in recruiters and administrators, evaluate job eligibility, manage applications and issue demonstration offer letters. The app does not need government identity numbers, home addresses, personal phone numbers, bank details or unrelated sensitive information.</p>
+
+    <h2>3. Who can see it</h2>
+    <p>Students can view their own profile, applications and offer letters. Authenticated recruiters and administrators can view a limited academic profile for placement activities. Password hashes and private credentials are not returned by profile or search APIs. Offer downloads are restricted to the intended student and administrators.</p>
+
+    <h2>4. Retention and deletion</h2>
+    <p>This local demonstration stores records in a SQLite database until the database is deleted or a project administrator removes the records. It does not currently provide a self-service account deletion or data export workflow. A real deployment must define and implement retention periods, deletion processes, backup expiry and any legally required retention before collecting real records.</p>
+
+    <h2>5. Security and sharing</h2>
+    <p>The demo uses password hashing, server-side sessions, CSRF protection, role and ownership checks, restricted profile projections, prepared SQL statements, security headers and an audit log. Do not place real student data in this demonstration or share the local database. The project has no production hosting, incident response or formal audit controls.</p>
+
+    <h2>6. Your choices and contact</h2>
+    <p>Do not register information belonging to another person. For the classroom demonstration, ask the project maintainer or course faculty to correct or remove dummy records. A real deployment must publish a verified privacy contact and provide appropriate processes for access, correction, erasure, consent withdrawal and grievance handling as required by applicable law.</p>
+
+    <div class="notice"><strong>Important:</strong> Use dummy student data only. This project is for a controlled lab evaluation and must not be treated as an operational university placement portal.</div>
+    <a class="button button-primary" href="/">Return to Talent Hub</a>
+  </main>
+</body>
+</html>

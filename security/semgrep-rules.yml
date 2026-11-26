@@ -1,0 +1,28 @@
+rules:
+  - id: talent-hub-no-eval
+    message: Avoid eval because it executes dynamically constructed JavaScript.
+    severity: ERROR
+    languages: [javascript]
+    pattern: eval(...)
+
+  - id: talent-hub-no-math-random-for-security
+    message: Math.random is not a cryptographically secure source of identifiers or tokens.
+    severity: WARNING
+    languages: [javascript]
+    pattern: Math.random(...)
+
+  - id: talent-hub-no-weak-hash
+    message: Do not use MD5 or SHA-1 for password storage or security tokens.
+    severity: ERROR
+    languages: [javascript]
+    pattern-either:
+      - pattern: crypto.createHash('md5')
+      - pattern: crypto.createHash('sha1')
+
+  - id: talent-hub-no-shell-exec
+    message: Avoid shell execution with untrusted input; use safe argument-based process APIs.
+    severity: ERROR
+    languages: [javascript]
+    pattern-either:
+      - pattern: child_process.exec($CMD, ...)
+      - pattern: exec($CMD, ...)

@@ -1,0 +1,19 @@
+{
+  "name": "talent-hub",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A secure campus placement and talent management portal built with Node.js and SQLite.",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test",
+    "security:audit": "npm audit --audit-level=moderate",
+    "security:semgrep": "semgrep scan --config security/semgrep-rules.yml .",
+    "licenses": "node scripts/license-summary.js"
+  },
+  "license": "MIT"
+}

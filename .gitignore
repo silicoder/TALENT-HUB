@@ -1,0 +1,13 @@
+node_modules/
+.env
+.env.*
+!.env.example
+data/*.sqlite
+data/*.sqlite-*
+data/*.db
+coverage/
+.DS_Store
+npm-debug.log*
+*.log
+reports/raw/
+reports/rendered/
